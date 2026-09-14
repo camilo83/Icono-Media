@@ -1,0 +1,205 @@
+@import '../../../main.scss';
+
+.section-numbers {
+  padding-inline: 2vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  position: relative;
+  .fade-number {
+    width: 30%;
+    > div {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+      cursor: pointer;
+
+      > div {
+        width: 10vw;
+        height: 10vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: $beige;
+        border-radius: 50%;
+        p {
+          font-size: 5vw;
+          font-weight: 700;
+          color: $orange;
+          text-align: center;
+        }
+      }
+      > p {
+        font-size: 16px;
+        width: 100%;
+        font-weight: 400;
+        color: $text;
+
+        text-align: center;
+      }
+    }
+  }
+  .fade-class-numbers {
+    position: fixed;
+    top: 50%;
+    z-index: 100;
+
+    .popup {
+      padding: 30px 40px;
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      width: auto;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 10px;
+      width: 50vw;
+      height: max-content;
+      background-color: $purple;
+
+      .projects-list {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        .project-item {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          gap: 1rem;
+          a {
+            font-size: 1rem;
+            color: $text;
+            text-decoration: none;
+          }
+          svg {
+            color: $text;
+            font-size: 1.5rem;
+          }
+        }
+      }
+      .close {
+        position: absolute;
+        right: 1rem;
+        top: 1rem;
+        color: $text;
+        font-size: 1.5rem;
+        cursor: pointer;
+        &:hover {
+          opacity: 0.7;
+        }
+      }
+      h3 {
+        font-size: 2rem;
+        color: $text;
+        padding-bottom: 2rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .section-numbers {
+    padding-inline: 0vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    position: relative;
+    .fade-number {
+      width: 30%;
+      > div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+        cursor: pointer;
+
+        > div {
+          width: 10vw;
+          height: 10vw;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background-color: $beige;
+          border-radius: 50%;
+          p {
+            font-size: 5vw;
+            font-weight: 700;
+            color: $orange;
+            text-align: center;
+          }
+        }
+        > p {
+          font-size: 16px;
+          width: 100%;
+          font-weight: 400;
+          color: $text;
+
+          text-align: center;
+        }
+      }
+    }
+    .fade-class-numbers {
+      position: fixed;
+      top: 50%;
+      z-index: 100;
+
+      .popup {
+        padding: 30px 40px;
+        background-color: white;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+        width: 50vw;
+        height: max-content;
+        background-color: $purple;
+
+        .projects-list {
+          display: flex;
+          flex-direction: column;
+          gap: 1rem;
+          .project-item {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 1rem;
+            a {
+              font-size: 1rem;
+              color: $text;
+              text-decoration: none;
+            }
+            svg {
+              color: $text;
+              font-size: 1.5rem;
+            }
+          }
+        }
+        .close {
+          position: absolute;
+          right: 1rem;
+          top: 1rem;
+          color: $text;
+          font-size: 1.5rem;
+          cursor: pointer;
+          &:hover {
+            opacity: 0.7;
+          }
+        }
+        h3 {
+          font-size: 2rem;
+          color: $text;
+          padding-bottom: 2rem;
+        }
+      }
+    }
+  }
+}

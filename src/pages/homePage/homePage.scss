@@ -1,0 +1,216 @@
+@import '../../main.scss';
+
+.home-page {
+  height: 55vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  .image-container {
+    height: 50vh;
+    position: relative;
+    .fade-class {
+      height: 100%;
+      width: auto;
+      img {
+        height: 100%;
+        width: auto;
+      }
+      .aboutus {
+        height: 103%;
+        transform: translateY(-1.7vh);
+      }
+    }
+
+    .digital-media {
+      position: absolute;
+      top: /* 10.4rem */ 32.5%;
+      left: /* 6.3rem */ 12.5%;
+      height: 14vh;
+      width: 14vh;
+      cursor: pointer;
+      transform: rotate(-36deg) skew(24deg, 5deg);
+    }
+    .editorials {
+      cursor: pointer;
+      position: absolute;
+      top: /* 10.4rem */ 48.5%;
+      left: /* 6.3rem */ 39.5%;
+      height: 21vh;
+      width: 13vh;
+
+      transform: rotate(-36deg) skew(24deg, 5deg);
+    }
+    .about-us {
+      cursor: pointer;
+      position: absolute;
+      top: /* 10.4rem */ 14.5%;
+      left: /* 6.3rem */ 29.5%;
+      height: 10vh;
+      width: 16vh;
+
+      transform: rotate(-37deg) skew(24deg, 5deg);
+    }
+    .publications {
+      cursor: pointer;
+      position: absolute;
+      top: /* 10.4rem */ 25.5%;
+      left: /* 6.3rem */ 49.5%;
+      height: 15vh;
+      width: 16vh;
+
+      transform: rotate(-35deg) skew(24deg, 5deg);
+    }
+    .graphic-arts {
+      cursor: pointer;
+      position: absolute;
+      top: /* 10.4rem */ 49%;
+      left: /* 6.3rem */ 70.5%;
+      height: 10vh;
+      width: 15vh;
+
+      transform: rotate(-35deg) skew(24deg, 5deg);
+    }
+  }
+
+  .content-description {
+    position: absolute;
+    width: 30%;
+    right: 10%;
+    top: 5%;
+    padding-left: 1.5rem;
+    color: $text;
+    border-left: 3px solid $text;
+    h1 {
+      font-size: 2.5vw;
+      font-weight: 800;
+    }
+    p {
+      font-size: 1.2vw;
+      font-weight: 400;
+    }
+  }
+  .entities {
+    position: absolute;
+    width: 30%;
+    left: 30%;
+    bottom: 10%;
+    color: $text;
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+    list-style-image: url('../../../public/arrow.png');
+
+    li {
+      font-size: 1.5vw;
+      font-weight: 400;
+    }
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .home-page {
+    height: 62vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    .image-container {
+      height: 55vh;
+      position: relative;
+      .fade-class {
+        display: flex;
+
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: auto;
+
+        img {
+          width: 90vw;
+          height: auto;
+        }
+      }
+
+      .digital-media {
+        position: absolute;
+        top: /* 10.4rem */ 37.5%;
+        left: /* 6.3rem */ 12.5%;
+        height: 19vw;
+        width: 15vw;
+        /*   background-color: rgb(255, 165, 0, 0.7); */
+        transform: rotate(-36deg) skew(24deg, 5deg);
+      }
+      .editorials {
+        position: absolute;
+        top: /* 10.4rem */ 48.8%;
+        left: /* 6.3rem */ 39.9%;
+        height: 26vw;
+        width: 15vw;
+        /*   background-color: rgb(255, 165, 0, 0.7); */
+        transform: rotate(-36deg) skew(24deg, 5deg);
+      }
+      .about-us {
+        position: absolute;
+        top: /* 10.4rem */ 24%;
+        left: /* 6.3rem */ 27.5%;
+        height: 9vh;
+        width: 19vw;
+        /*   background-color: rgb(255, 165, 0, 0.7); */
+        transform: rotate(-37deg) skew(24deg, 5deg);
+      }
+      .publications {
+        position: absolute;
+        top: /* 10.4rem */ 34%;
+        left: /* 6.3rem */ 48.5%;
+        height: 11vh;
+        width: 20vw;
+        /*   background-color: rgb(255, 165, 0, 0.7); */
+        transform: rotate(-35deg) skew(24deg, 5deg);
+      }
+      .graphic-arts {
+        position: absolute;
+        top: /* 10.4rem */ 48.5%;
+        left: /* 6.3rem */ 70.5%;
+        height: 8vh;
+        width: 18vw;
+        /*   background-color: rgb(255, 165, 0, 0.7); */
+        transform: rotate(-35deg) skew(24deg, 5deg);
+      }
+    }
+
+    .content-description {
+      position: absolute;
+      width: 30%;
+      right: 10%;
+      top: 5%;
+      padding-left: 1.5rem;
+      color: $text;
+      border-left: 3px solid $text;
+      h1 {
+        font-size: 18px;
+        font-weight: 800;
+      }
+      p {
+        font-size: 12px;
+        font-weight: 400;
+      }
+    }
+    .entities {
+      position: absolute;
+      width: 30%;
+      left: 30%;
+      bottom: 10%;
+      color: $text;
+      display: flex;
+      flex-direction: column;
+      gap: 0.2rem;
+      list-style-image: url('../../../public/arrow.png');
+
+      li {
+        font-size: 1.5vw;
+        font-weight: 400;
+      }
+    }
+  }
+}

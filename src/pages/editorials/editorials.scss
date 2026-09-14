@@ -1,0 +1,88 @@
+@import '../../main.scss';
+
+.editorials-background-container {
+  background-color: $green;
+  .page-container {
+    .editorials-page {
+      padding-inline: 20vw;
+      > button {
+        width: max-content;
+        background-color: transparent;
+        border: none;
+        opacity: 0.7;
+        font-family: $font-primary;
+        color: $beige;
+        font-size: 24px;
+        font-weight: 700;
+        cursor: pointer;
+        &:hover {
+          opacity: 1;
+        }
+      }
+      .editorials-banner {
+        background-size: cover;
+        border-radius: 27px;
+        display: flex;
+        flex-direction: column;
+
+        padding-top: 1.5rem;
+        img {
+          width: 100%;
+          height: 100%;
+          border-radius: 27px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .editorials-background-container {
+    background-color: $green;
+
+    .page-container {
+      .editorials-page {
+        padding-inline: 20vw;
+        background-color: $green;
+        .editorials-banner {
+          background-size: cover;
+          border-radius: 27px;
+          display: flex;
+          flex-direction: column;
+
+          padding-top: 1.5rem;
+          img {
+            width: 100%;
+            height: 100%;
+            border-radius: 27px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .editorials-background-container {
+    background-color: $green;
+    .page-container {
+      .editorials-page {
+        padding-inline: 5vw;
+        background-color: $green;
+        .editorials-banner {
+          background-size: cover;
+          border-radius: 27px;
+          display: flex;
+          flex-direction: column;
+
+          padding-top: 1.5rem;
+          img {
+            width: 100%;
+            height: 100%;
+            border-radius: 27px;
+          }
+        }
+      }
+    }
+  }
+}

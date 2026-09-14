@@ -1,0 +1,158 @@
+@import '../../../main.scss';
+
+.project-gallery {
+  padding-inline: 10vw;
+  background-color: $green;
+  .gallery-grid {
+    position: relative;
+    z-index: 10;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    padding-block: 3rem;
+
+    .img-wrapper {
+      cursor: pointer;
+      width: 100%;
+      height: 100%;
+      background-color: $green;
+      border-radius: 8px;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+        border-radius: 8px;
+        transition: transform 0.3s ease;
+      }
+      &:hover img {
+        transform: scale(1.05);
+      }
+    }
+  }
+}
+.modal {
+  position: sticky;
+  top: 5rem;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding-block: 5vh;
+
+  .modal-content {
+    width: 40vw;
+    height: auto;
+    max-height: 100%;
+    object-fit: cover;
+  }
+
+  .close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 40px;
+    color: white;
+    cursor: pointer;
+  }
+
+  .nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+    font-size: 40px;
+    user-select: none;
+    cursor: pointer;
+
+    &.left {
+      left: 10vw;
+    }
+
+    &.right {
+      right: 10vw;
+    }
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .project-gallery {
+    padding-inline: 5vw;
+    background-color: $green;
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 2fr);
+      gap: 20px;
+      padding-block: 0rem;
+
+      .img-wrapper {
+        cursor: pointer;
+        width: 100%;
+        height: 100%;
+        background-color: $green;
+        border-radius: 8px;
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          display: block;
+          border-radius: 8px;
+          transition: transform 0.3s ease;
+        }
+        &:hover img {
+          transform: scale(1.05);
+        }
+      }
+    }
+  }
+  .modal {
+    position: sticky;
+    top: 10rem;
+    left: 0;
+    width: 100%;
+    height: 60vh;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+
+    .modal-content {
+      width: 60vw;
+      height: auto;
+      object-fit: cover;
+      padding-block: 20vh;
+    }
+
+    .close {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      font-size: 40px;
+      color: white;
+      cursor: pointer;
+    }
+
+    .nav {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      color: white;
+      font-size: 20px;
+      user-select: none;
+      cursor: pointer;
+
+      &.left {
+        left: 5vw;
+      }
+
+      &.right {
+        right: 5vw;
+      }
+    }
+  }
+}

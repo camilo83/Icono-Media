@@ -1,0 +1,153 @@
+@import '../../../main.scss';
+
+.carrousel {
+  background-color: $purple;
+  padding-block: 4rem;
+  .carrousel-content {
+    padding-inline: 10vw;
+    display: flex;
+    flex-direction: row;
+    gap: 5%;
+    align-items: center;
+    .member-info {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      align-items: center;
+      gap: 10%;
+      .image-container {
+        width: 45%;
+
+        > img {
+          width: 100%;
+          height: 300px;
+          object-fit: cover;
+          border-radius: 27px;
+        }
+      }
+      .info-container {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        color: $text;
+        width: 55%;
+        > h3 {
+          font-size: 36px;
+          font-weight: 600;
+        }
+        > p {
+          font-size: 20px;
+          font-weight: 300;
+        }
+      }
+    }
+    svg {
+      cursor: pointer;
+      &:hover {
+        opacity: 0.7;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .carrousel {
+    background-color: $purple;
+    padding-block: 4rem;
+    .carrousel-content {
+      padding-inline: 5vw;
+      display: flex;
+      flex-direction: row;
+      gap: 3%;
+      align-items: center;
+      .member-info {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        align-items: center;
+        gap: 10%;
+        .image-container {
+          width: 45%;
+
+          > img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+          }
+        }
+        .info-container {
+          display: flex;
+          flex-direction: column;
+          gap: 2rem;
+          color: $text;
+          width: 55%;
+          > h3 {
+            font-size: 28px;
+            font-weight: 600;
+          }
+          > p {
+            font-size: 16px;
+            font-weight: 300;
+          }
+        }
+      }
+      svg {
+        cursor: pointer;
+        &:hover {
+          opacity: 0.7;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .carrousel {
+    background-color: $purple;
+    padding-block: 4rem;
+    .carrousel-content {
+      padding-inline: 5vw;
+      display: flex;
+      flex-direction: row;
+      gap: 5vw;
+      align-items: center;
+      .member-info {
+        display: flex;
+        flex-direction: column-reverse;
+        width: 100%;
+        align-items: center;
+        gap: 2rem;
+        .image-container {
+          width: 100%;
+
+          > img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+          }
+        }
+        .info-container {
+          display: flex;
+          flex-direction: column;
+          gap: 2rem;
+          color: $text;
+          width: 100%;
+          > h3 {
+            font-size: 28px;
+            font-weight: 600;
+          }
+          > p {
+            font-size: 16px;
+            font-weight: 300;
+          }
+        }
+      }
+      svg {
+        cursor: pointer;
+        &:hover {
+          opacity: 0.7;
+        }
+      }
+    }
+  }
+}

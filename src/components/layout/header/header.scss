@@ -1,0 +1,143 @@
+@import '../../../main.scss';
+
+header {
+  .close-header {
+    height: 25vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 1rem;
+    svg {
+      cursor: pointer;
+      color: $beige;
+    }
+    .logo {
+      height: 4rem;
+    }
+    .bars {
+      font-size: 1.5rem;
+      color: $beige;
+    }
+  }
+}
+
+.open-header {
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .svgs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 25vh;
+    gap: 1rem;
+    justify-content: space-evenly;
+    svg {
+      cursor: pointer;
+    }
+    .logo {
+      height: 4rem;
+    }
+    .bars {
+      font-size: 1.5rem;
+      width: auto;
+      color: $beige;
+    }
+  }
+  ul {
+    display: flex;
+    padding-top: 2rem;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.2rem;
+    list-style-type: none;
+    padding-left: 0;
+    button {
+      cursor: pointer;
+      background-color: transparent;
+      border: none;
+      color: $beige;
+      font-size: 24px;
+      font-weight: 700;
+      font-family: $font-primary;
+    }
+  }
+}
+
+@media screen and (max-width: 550px) {
+  header {
+    .close-header {
+      height: 18vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+      svg {
+        cursor: pointer;
+        color: $beige;
+      }
+      .logo {
+        height: 3rem;
+      }
+      .bars {
+        height: 3rem;
+        color: $beige;
+      }
+    }
+  }
+
+  .open-header {
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .svgs {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      height: 18vh;
+      gap: 1rem;
+      justify-content: center;
+      svg {
+        cursor: pointer;
+      }
+      .logo {
+        height: 3rem;
+      }
+      .bars {
+        height: 3rem;
+        width: auto;
+        color: $beige;
+      }
+    }
+    ul {
+      display: flex;
+      padding-top: 2rem;
+      flex-direction: column;
+      align-items: center;
+      gap: 1.2rem;
+      list-style-type: none;
+      padding-left: 0;
+      cursor: pointer;
+      button {
+        background-color: transparent;
+        border: none;
+        color: $beige;
+        font-size: 24px;
+        font-weight: 700;
+        font-family: $font-primary;
+      }
+    }
+  }
+}
