@@ -1,0 +1,84 @@
+@import '../../main.scss';
+
+.about-us-page-container {
+  background-color: $orange;
+  .about-us-page {
+    padding-inline: 10vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    > button {
+      width: max-content;
+      background-color: transparent;
+      border: none;
+      opacity: 0.7;
+      font-family: $font-primary;
+      color: $beige;
+      font-size: 24px;
+      font-weight: 700;
+      cursor: pointer;
+      padding-bottom: 0rem;
+      align-self: flex-start;
+      padding-bottom: 1rem;
+      &:hover {
+        opacity: 1;
+      }
+    }
+    .fade-class {
+      width: 100%;
+      .about-us-img {
+        height: 300px;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 27px;
+      }
+      > h2 {
+        color: $text;
+        font-size: 36px;
+        font-weight: 600;
+        text-align: center;
+        margin-bottom: 0.4rem;
+      }
+      > p {
+        color: $text;
+        font-size: 20px;
+        font-weight: 300;
+        text-align: center;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .about-us-page-container {
+    background-color: $orange;
+    .about-us-page {
+      padding-inline: 5vw;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .fade-class {
+        width: 100%;
+        .about-us-img {
+          height: 300px;
+          width: 100%;
+          object-fit: cover;
+          border-radius: 27px;
+        }
+        > h2 {
+          color: $text;
+          font-size: 36px;
+          font-weight: 600;
+          text-align: center;
+          margin-bottom: 0.4rem;
+        }
+        > p {
+          color: $text;
+          font-size: 20px;
+          font-weight: 300;
+          text-align: center;
+        }
+      }
+    }
+  }
+}

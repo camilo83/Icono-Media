@@ -1,0 +1,109 @@
+@import '../../../main.scss';
+
+.publications-carousel-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding-block: 3rem;
+  transform: translateY(-10px);
+}
+
+.carousel-slide-container {
+  width: 100%;
+  display: flex;
+  overflow: hidden;
+}
+
+.carousel-slide {
+  display: flex;
+  transition: transform 0.5s ease;
+  width: 100%;
+}
+
+.image-wrapper {
+  min-width: calc(100% / 3);
+  transition: transform 0.3s ease;
+  padding: 0 30px;
+
+  .publication-item {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+    align-items: center;
+
+    .image-container {
+      width: 100%;
+      img {
+        width: 100%;
+        aspect-ratio: 1/1 !important;
+        object-fit: cover;
+      }
+    }
+    h3 {
+      font-size: 24px;
+      font-weight: 600;
+      color: $text; /* Asumiendo que $text es una variable definida previamente en tu archivo SCSS o CSS */
+      overflow: hidden;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 2;
+      line-clamp: 2;
+      height: 3em; /* Altura basada en el tamaño de la fuente y la línea */
+      line-height: 1.5; /* Ajusta esto según la altura deseada para dos líneas */
+    }
+
+    p {
+      font-size: 16px;
+      font-weight: 300;
+      color: $text;
+    }
+  }
+}
+
+.carousel-arrows {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding-top: 1rem;
+  .left-arrow,
+  .right-arrow {
+    background: none;
+    border: none;
+    font-size: 40px;
+    cursor: pointer;
+    color: $beige;
+    padding: 10px;
+    transition: all 0.2s ease-in-out;
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+}
+
+.carousel-dots {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+
+  .dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 5px;
+    cursor: pointer;
+    border-radius: 50%;
+    display: inline-block;
+    background-color: $beige;
+    transition: background-color 0.3s ease-in-out;
+
+    &.active {
+      background-color: #717171;
+    }
+  }
+}

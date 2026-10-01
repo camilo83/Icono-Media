@@ -1,0 +1,40 @@
+$text: #ffffff;
+$purple: #3c3688;
+$orange: #ee8c2d;
+$green: #266c66;
+$beige: #f0edd6;
+$yellow: #fddba1;
+
+$font-primary: 'Roboto', sans-serif;
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0rem;
+  font-family: $font-primary;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span,
+p,
+ul,
+li,
+button,
+a {
+  margin: 0;
+  padding: 0;
+}
+
+.page-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 1600px;
+  margin: 0 auto;
+}
